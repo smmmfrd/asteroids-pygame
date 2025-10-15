@@ -51,7 +51,7 @@ def main():
             for s in shots:
                 if s.check_collide(a):
                     s.kill()
-                    a.kill()
+                    a.split()
 
         pygame.display.flip()
         dt = clock.tick(60) / 1000
